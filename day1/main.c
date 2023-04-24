@@ -37,7 +37,7 @@ int main(void){
         
         //if the length is 0 we are done with the current elf
         if(len == 0){
-            // Yeaaaah this is not good but that's what I'm going with. Otherwise I'll have to implement some kind of data structure
+            // Yeaaaah this is not perfect, but fine enough for our use case.
             if(curr_calories > most_calories[0]){
                 most_calories[2] = most_calories[1];
                 most_calories[1] = most_calories[0];
