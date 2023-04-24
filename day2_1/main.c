@@ -19,7 +19,7 @@ int get_tokens(char* line, char* o, char* p){
         return -1;
     }
     *o = line[0] - 0x40;
-    *p = line[2]- 0x57; //Normalize our input
+    *p = line[2]- 0x57; //Normalize our input to 1,2 and 3
     return 1;
 }
 
