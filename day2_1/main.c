@@ -5,17 +5,10 @@
 #define IS_O(c)     (c >'@' && c < 'D')
 #define IS_P(c)     (c > 'W' && c < '[')
 
-//Used for getting the absolute value
-#define ABS(v)      (v > 0 || v<0 ? v * ((v>0) - (v<0)) : 0)
-
 
 //Checks for whether something is a win loss or a draw
 #define ISDRAW(p,o) (o == p ? 3 : 0)
 #define ISWIN(p,o)  (ABS(p-o)%3 == 1 ? 6 : 0)
-
-int is_win(char o, char p){
-    return ((o-p)%3) == 1;
-}
 
 int get_tokens(char* line, char* o, char* p){
     //Yeah we might go OOB but doesn't matter as we check whether input is valid

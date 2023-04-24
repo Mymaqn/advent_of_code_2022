@@ -4,6 +4,7 @@
 //General macros
 #define ISDIGIT(c) ((unsigned char)c > '/' && (unsigned char)c < ':')
 #define ISSPACE(c) ((unsigned char)c == ' ' || (unsigned char)c == '\t' || (unsigned char)c == '\n')
+#define ABS(v)      (v > 0 || v<0 ? v * ((v>0) - (v<0)) : 0)
 
 #define LONG_MAX 0x7fffffffffffffff
 
